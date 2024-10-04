@@ -54,7 +54,7 @@ def show_stripe_purchase_button():
                     'quantity': 1,
                 },
             ],
-            mode='payment',
+            mode='subscription',
             success_url=BACKEND_URL + '/payment_success',
             cancel_url=BACKEND_URL + '/payment_cancel',
             customer=customer_id,  # 顧客IDを設定
